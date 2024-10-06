@@ -13,3 +13,11 @@ a:active {
   color: black;
   font-weight: 600;
 }
+
+.nav-item.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none; /* Hidden by default */
+}

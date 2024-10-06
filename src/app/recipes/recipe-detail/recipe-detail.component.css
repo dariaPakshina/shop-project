@@ -1,0 +1,7 @@
+.btn-group.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+}

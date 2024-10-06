@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Recipe } from '../../recipe.model';
+import { DropdownDirective } from '../../../shared/dropdown.directive';
 
 @Component({
   selector: 'app-recipe-item',
   standalone: true,
-  imports: [],
+  imports: [DropdownDirective],
   templateUrl: './recipe-item.component.html',
   styleUrl: './recipe-item.component.css',
 })

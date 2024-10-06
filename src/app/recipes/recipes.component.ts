@@ -4,6 +4,7 @@ import { RecipeItemComponent } from './recipe-list/recipe-item/recipe-item.compo
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { Recipe } from './recipe.model';
 import { NgIf } from '@angular/common';
+import { DropdownDirective } from '../shared/dropdown.directive';
 
 @Component({
   selector: 'app-recipes',
@@ -13,6 +14,7 @@ import { NgIf } from '@angular/common';
     RecipeItemComponent,
     RecipeListComponent,
     NgIf,
+    DropdownDirective,
   ],
   templateUrl: './recipes.component.html',
   styleUrl: './recipes.component.css',

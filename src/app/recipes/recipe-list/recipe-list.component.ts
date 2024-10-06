@@ -2,11 +2,12 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { RecipeItemComponent } from './recipe-item/recipe-item.component';
 import { Recipe } from '../recipe.model';
 import { NgFor } from '@angular/common';
+import { DropdownDirective } from '../../shared/dropdown.directive';
 
 @Component({
   selector: 'app-recipe-list',
   standalone: true,
-  imports: [RecipeItemComponent, NgFor],
+  imports: [RecipeItemComponent, NgFor, DropdownDirective],
   templateUrl: './recipe-list.component.html',
   styleUrl: './recipe-list.component.css',
 })

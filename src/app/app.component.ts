@@ -8,6 +8,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { HeaderComponent } from './header/header.component';
 import { NgIf } from '@angular/common';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import { NgIf } from '@angular/common';
     ShoppingListComponent,
     HeaderComponent,
     NgIf,
+    DropdownDirective,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
