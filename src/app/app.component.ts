@@ -7,6 +7,7 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { HeaderComponent } from './header/header.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -20,10 +21,15 @@ import { HeaderComponent } from './header/header.component';
     ShoppingEditComponent,
     ShoppingListComponent,
     HeaderComponent,
+    NgIf,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'shop-project';
+  loadedFeature = 'recipe';
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }

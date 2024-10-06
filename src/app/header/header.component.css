@@ -7,3 +7,9 @@
   background-color: #ececec;
   margin-bottom: 1rem;
 }
+
+a:hover,
+a:active {
+  color: black;
+  font-weight: 600;
+}

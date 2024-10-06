@@ -1,0 +1,11 @@
+.custom-border,
+.custom-border:visited {
+  border: 1.5px solid #cccccc; /* Light gray border with 2px width */
+  border-radius: 7px; /* Optional: rounded corners */
+  transition: all 0.3s;
+}
+
+.custom-border:hover,
+.custom-border:active {
+  background-color: #f3f3f3;
+}
