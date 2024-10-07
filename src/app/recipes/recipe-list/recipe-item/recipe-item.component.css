@@ -9,3 +9,7 @@
 .custom-border:active {
   background-color: #f3f3f3;
 }
+
+img {
+  margin-left: 1rem;
+}

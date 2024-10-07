@@ -5,3 +5,14 @@
 .dropdown-menu {
   display: none;
 }
+
+.dropdown-menu {
+  top: 100%; /* Positions the dropdown below the button */
+  left: 0; /* Aligns the dropdown with the left edge of the button */
+  z-index: 1000; /* Ensures the dropdown appears above other elements */
+  --bs-dropdown-min-width: 5rem;
+}
+
+img {
+  border-radius: 6px;
+}

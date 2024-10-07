@@ -13,7 +13,11 @@
       </div>
       <div class="row">
         <div class="col-12 d-flex gap-2">
-          <button class="btn btn-success" type="submit" (click)="onAddItem()">
+          <button
+            class="btn btn-success"
+            type="button"
+            (click)="onAddItem(); $event.stopPropagation()"
+          >
             Add
           </button>
           <button class="btn btn-danger" type="button">Delete</button>

@@ -19,5 +19,6 @@ a:active {
 }
 
 .dropdown-menu {
-  display: none; /* Hidden by default */
+  display: none;
+  --bs-dropdown-min-width: 5rem;
 }
