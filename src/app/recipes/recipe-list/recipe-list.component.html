@@ -1,7 +1,9 @@
 <div class="container-fluid">
   <div class="row justify-content-center align-items-center">
     <div class="col-xs-12 ml-2">
-      <button class="btn btn-success">New Recipe</button>
+      <button class="btn btn-success" (click)="onNewRecipe()">
+        New Recipe
+      </button>
     </div>
   </div>
 
@@ -9,8 +11,9 @@
 
   <div class="row align-items-center mt-4">
     <app-recipe-item
-      *ngFor="let recipeEl of recipes"
+      *ngFor="let recipeEl of recipes; let i = index"
       [recipe]="recipeEl"
+      [index]="i"
     ></app-recipe-item>
   </div>
 </div>

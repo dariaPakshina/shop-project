@@ -1,7 +1,7 @@
 .custom-border,
 .custom-border:visited {
-  border: 1.5px solid #cccccc; /* Light gray border with 2px width */
-  border-radius: 7px; /* Optional: rounded corners */
+  border: 1.5px solid #cccccc;
+  border-radius: 7px;
   transition: all 0.3s;
 }
 
@@ -12,4 +12,14 @@
 
 img {
   margin-left: 1rem;
+}
+
+.list-group-item.active {
+  background-color: #e6eee4;
+}
+
+.list-group-item {
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  transition: all 0.3s;
 }

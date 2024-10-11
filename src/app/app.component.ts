@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
@@ -9,6 +9,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { HeaderComponent } from './header/header.component';
 import { NgIf } from '@angular/common';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,10 @@ import { DropdownDirective } from './shared/dropdown.directive';
     HeaderComponent,
     NgIf,
     DropdownDirective,
+    RouterLink,
+    RouterLinkActive,
+    RouterOutlet,
+    RecipeEditComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -31,7 +36,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
 export class AppComponent {
   loadedFeature = 'recipe';
 
-  onNavigate(feature: string) {
+  onNavigate(feature: any) {
     this.loadedFeature = feature;
   }
 }

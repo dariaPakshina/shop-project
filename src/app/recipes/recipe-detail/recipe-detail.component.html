@@ -28,8 +28,17 @@
             >To Shopping List</a
           >
         </li>
-        <li><a class="dropdown-item" href="#">Recipe</a></li>
-        <li><a class="dropdown-item" href="#">Delete Recipe</a></li>
+        <li>
+          <a
+            style="cursor: pointer"
+            class="dropdown-item"
+            (click)="onEditRecipe()"
+            >Edit Recipe</a
+          >
+        </li>
+        <li>
+          <a style="cursor: pointer" class="dropdown-item">Delete Recipe</a>
+        </li>
       </ul>
     </div>
   </div>

@@ -6,6 +6,7 @@ import { Recipe } from './recipe.model';
 import { NgIf } from '@angular/common';
 import { DropdownDirective } from '../shared/dropdown.directive';
 import { RecipeService } from './recipe.service';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-recipes',
@@ -16,6 +17,7 @@ import { RecipeService } from './recipe.service';
     RecipeListComponent,
     NgIf,
     DropdownDirective,
+    RouterOutlet,
   ],
   templateUrl: './recipes.component.html',
   styleUrl: './recipes.component.css',
