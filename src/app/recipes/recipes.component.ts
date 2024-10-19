@@ -5,7 +5,6 @@ import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { Recipe } from './recipe.model';
 import { NgIf } from '@angular/common';
 import { DropdownDirective } from '../shared/dropdown.directive';
-import { RecipeService } from './recipe.service';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -25,11 +24,7 @@ import { RouterOutlet } from '@angular/router';
 export class RecipesComponent implements OnInit {
   selectedRecipe?: Recipe;
 
-  constructor(private recipeService: RecipeService) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.recipeService.recipeSelected.subscribe((recipe: Recipe) => {
-      this.selectedRecipe = recipe;
-    });
-  }
+  ngOnInit() {}
 }

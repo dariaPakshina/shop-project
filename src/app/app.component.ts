@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { NgIf } from '@angular/common';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RecipeService } from './recipes/recipe.service';
 
 @Component({
   selector: 'app-root',
@@ -29,14 +31,9 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
     RouterLinkActive,
     RouterOutlet,
     RecipeEditComponent,
+    ReactiveFormsModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
-  loadedFeature = 'recipe';
-
-  onNavigate(feature: any) {
-    this.loadedFeature = feature;
-  }
-}
+export class AppComponent {}
