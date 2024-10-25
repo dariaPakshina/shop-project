@@ -11,7 +11,7 @@ import { NgIf } from '@angular/common';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RecipeService } from './recipes/recipe.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
