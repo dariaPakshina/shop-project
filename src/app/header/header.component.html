@@ -3,7 +3,11 @@
     <a class="navbar-brand" href="#">Recipe Book</a>
     <ul class="navbar-nav me-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/recipes" routerLinkActive="active"
+        <a
+          class="nav-link"
+          routerLink="/recipes"
+          routerLinkActive="active"
+          *ngIf="isAuthenticated"
           >Recipes</a
         >
       </li>
@@ -17,7 +21,7 @@
       </li>
     </ul>
     <ul class="navbar-nav ms-auto">
-      <li class="nav-item dropdown" appDropdown>
+      <li class="nav-item dropdown" appDropdown *ngIf="isAuthenticated">
         <a
           class="nav-link dropdown-toggle"
           style="cursor: pointer"
@@ -35,9 +39,26 @@
             >
           </li>
           <li>
-            <a class="dropdown-item" style="cursor: pointer">Fetch Data</a>
+            <a
+              class="dropdown-item"
+              style="cursor: pointer"
+              (click)="onFetchData()"
+              >Fetch Data</a
+            >
           </li>
         </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/auth"
+          routerLinkActive="active"
+          *ngIf="!isAuthenticated"
+          >Log in</a
+        >
+      </li>
+      <li class="nav-item" style="cursor: pointer" *ngIf="isAuthenticated">
+        <a class="nav-link" (click)="onLogOut()">Log out</a>
       </li>
     </ul>
   </div>
