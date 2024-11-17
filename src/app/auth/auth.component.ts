@@ -5,11 +5,12 @@ import { NgIf } from '@angular/common';
 import { LoadingSpinnerComponent } from '../loading-spinner/loading-spinner.component';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { AlertComponent } from '../alert/alert.component';
 
 @Component({
   selector: 'app-auth',
   standalone: true,
-  imports: [FormsModule, NgIf, LoadingSpinnerComponent],
+  imports: [FormsModule, NgIf, LoadingSpinnerComponent, AlertComponent],
   templateUrl: './auth.component.html',
   styleUrl: './auth.component.css',
 })
@@ -57,5 +58,9 @@ export class AuthComponent {
     );
 
     form.reset();
+  }
+
+  onHandleError() {
+    this.error = '';
   }
 }
