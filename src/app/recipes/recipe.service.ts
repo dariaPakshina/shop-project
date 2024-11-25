@@ -27,6 +27,7 @@ export class RecipeService {
   // ];
 
   private recipes: Recipe[] = [];
+  id!: number;
 
   setRecipes(recipes: Recipe[]) {
     this.recipes = recipes;
